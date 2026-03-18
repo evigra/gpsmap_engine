@@ -1,0 +1,12 @@
+<templates xml:space="preserve">
+
+    <t t-inherit="gpsmap.gpsmaps_odometers" t-inherit-mode="extension">
+        
+        <xpath expr="//div[@id='gas']" position="after">
+            <div t-if="template_history==0" id="llaves" t-groups="fleet.fleet_group_manager" style="z-index:110;">
+                <img id="key" src="/gpsmap_engine/static/img/template/swich_on.png"/>
+            </div>      
+        </xpath>
+
+    </t>
+</templates>
